@@ -8,7 +8,7 @@ FROM PortfolioProject..CovidVaccinations
 Order by 3,4
 
 
---Select Data that we are going to be using
+--Select Data that we are going to be using.
 
 Select Location, date, total_cases, new_cases, total_deaths, population
 From PortfolioProject..CovidDeath
