@@ -34,7 +34,7 @@ Select Location, date, population, total_cases, (total_cases/population)*100 as 
 From PortfolioProject..CovidDeath
 Where Location like '%states%'
 Order by 1,2
---Shows what percentage of population got Covid
+--
 
 --What countries with highest infections rate compared to population
 Select Location, population, MAX(total_cases) as HighestInfectionCount, Max((total_cases/population))*100 as PercentPopulationInfected
