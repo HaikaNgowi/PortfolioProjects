@@ -1,0 +1,6 @@
+Data Wrangling, visualization and modeling using:
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn

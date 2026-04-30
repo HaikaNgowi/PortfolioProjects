@@ -1,0 +1,29 @@
+# Ignore Python cache and virtual environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+venv/
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore data files (keep only small samples if needed)
+data/*
+!data/sample_*.csv   # allow small sample files (optional)
+
+# Ignore outputs (plots, reports, html exports, etc.)
+outputs/*
+!outputs/README.md   # keep a placeholder if needed
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore environment configs
+*.env

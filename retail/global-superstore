@@ -1,0 +1,189 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Global Superstore | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="Exploring Worldwide Retail Trends: Global Superstore Dataset" />
+    <meta name="keywords" content="business,data analytics,data visualization,exploratory data analysis,data cleaning" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="vL0oWwbuMqgTFPlReeHqCw==" type="text/javascript">
+    window["pageRequestStartTime"] = 1758148233503;
+    window["pageRequestEndTime"] = 1758148233618;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <script nonce="vL0oWwbuMqgTFPlReeHqCw==" id="gsi-client" src="https://accounts.google.com/gsi/client" async defer></script>
+  <script nonce="vL0oWwbuMqgTFPlReeHqCw==">window.KAGGLE_JUPYTERLAB_PATH = "/static/assets/jupyterlab-v4/jupyterlab-index-360abfcbb990afe2add9.html";</script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+    <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" id="dynamic-favicon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="vL0oWwbuMqgTFPlReeHqCw==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+
+    <link rel="canonical" href="https://www.kaggle.com/datasets/endofnight17j03/global-superstore" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=2d4e7ec4eb689d926191" />
+
+  
+    
+ 
+      <script nonce="vL0oWwbuMqgTFPlReeHqCw==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="vL0oWwbuMqgTFPlReeHqCw==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets',
+            'user_properties': {
+                'logged_in': true,
+            }
+        });
+    </script>
+    <script nonce="vL0oWwbuMqgTFPlReeHqCw==" async src="https://www.googletagmanager.com/gtag/js?id=G-T7QHS60L4Q"></script>
+
+  
+    
+    <meta property="og:url" content="https://www.kaggle.com/datasets/endofnight17j03/global-superstore" />
+    <meta property="og:title" content="Global Superstore" />
+    <meta property="og:description" content="Exploring Worldwide Retail Trends: Global Superstore Dataset" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/4411095/7576957/8591434b7f3ec3dbec743f2ff3c9f96d/dataset-card.jpg?t=2024-02-11-14-14-02" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+        <meta name="twitter:creator" content="@end_of_night" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+            <script nonce="vL0oWwbuMqgTFPlReeHqCw==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"Global Superstore","description":"The Global Superstore dataset is a rich and expansive collection of sales data from a hypothetical multinational retail corporation. This dataset encompasses a wide range of information, including details about products, customers, orders, and sales across different regions and product categories. With its extensive scope and granularity, the Global Superstore dataset serves as a valuable resource for gaining insights into various aspects of retail operations and consumer behavior.\n\nAt its core, the Global Superstore dataset provides a snapshot of transactions and interactions within a retail environment. Each entry in the dataset represents a specific sale or order, capturing essential details such as the product purchased, the customer involved, the date of the transaction, and the geographic location of the sale. By aggregating and analyzing this data, retailers can uncover patterns, trends, and correlations that offer valuable insights into their business performance and customer preferences.\n\nOne of the key components of the Global Superstore dataset is its product information. This includes details about the products offered by the retail corporation, such as their category, sub-category, brand, and price. Understanding which products are selling well and which are underperforming is crucial for retailers looking to optimize their product offerings and maximize sales revenue. By analyzing product sales data, retailers can identify popular items, forecast demand, and make informed decisions about inventory management and marketing strategies.\n\nIn addition to product data, the Global Superstore dataset also contains information about customers and their purchasing behavior. This includes demographic information, such as age, gender, and location, as well as details about customers' buying habits and preferences. Analyzing customer data can help retailers identify their target market segments, tailor marketing campaigns to specific customer segments, and personalize the shopping experience to drive customer loyalty and satisfaction.\n\nAnother important aspect of the Global Superstore dataset is its geographic dimension. Sales data is often segmented by region, allowing retailers to analyze sales performance across different geographic areas. By examining regional sales trends and patterns, retailers can identify opportunities for expansion, optimize distribution and logistics operations, and tailor marketing efforts to local preferences and demographics.\n\nMoreover, the Global Superstore dataset provides insights into the dynamics of the retail supply chain. By tracking orders, shipments, and delivery times, retailers can identify bottlenecks, optimize inventory levels, and streamline logistics processes to improve efficiency and reduce costs. Understanding the flow of products from suppliers to customers enables retailers to enhance the overall customer experience and maintain a competitive edge in the market.\n\nOverall, the Global Superstore dataset offers a wealth of information that can be leveraged to drive strategic decision-making and improve business performance in the retail industry. By analyzing product sales, customer behavior, geographic trends, and supply chain dynamics, retailers can gain valuable insights into their operations, identify areas for improvement, and implement targeted strategies to drive growth and success. With its comprehensive scope and granular detail, the Global Superstore dataset serves as a valuable resource for retailers looking to thrive in an increasingly competitive marketplace.","url":"https://www.kaggle.com/endofnight17j03/global-superstore","version":1,"keywords":["subject, people and society, business","technique, data analytics","technique, data visualization","technique, exploratory data analysis","analysis, data cleaning"],"license":{"@type":"CreativeWork","name":"Apache 2.0","url":"https://www.apache.org/licenses/LICENSE-2.0"},"identifier":["4411095"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"end_of_night.17j03","url":"https://www.kaggle.com/endofnight17j03","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/12106377-kg.jpeg?t=2024-08-04-18-11-04"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/endofnight17j03/global-superstore/download?datasetVersionNumber=1","contentSize":"8494310 bytes"}],"commentCount":0,"dateModified":"2024-02-07T04:08:06.183Z","discussionUrl":"https://www.kaggle.com/endofnight17j03/global-superstore/discussion","alternateName":"Exploring Worldwide Retail Trends: Global Superstore Dataset","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/4411095/7576957/8591434b7f3ec3dbec743f2ff3c9f96d/dataset-card.jpg?t=2024-02-11-14-14-02","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":0},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":1854},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":8306},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":55}]}</script>
+        
+
+  
+    
+
+  
+    
+
+
+    <script nonce="vL0oWwbuMqgTFPlReeHqCw==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="vL0oWwbuMqgTFPlReeHqCw==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="vL0oWwbuMqgTFPlReeHqCw==" src="/static/assets/runtime.js?v=e0453784129bad01d2f6"></script>
+  <script nonce="vL0oWwbuMqgTFPlReeHqCw==" src="/static/assets/vendor.js?v=5f5ace68d8e037896b4c"></script>
+  <script nonce="vL0oWwbuMqgTFPlReeHqCw==" src="/static/assets/app.js?v=650af680ea2f48bbbb58"></script>
+    <script nonce="vL0oWwbuMqgTFPlReeHqCw==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '7897815'
+      }
+    </script>
+</head>
+<body>
+  <div id="root">
+    
+
+
+
+
+
+
+
+
+<script nonce="vL0oWwbuMqgTFPlReeHqCw==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    jax: ['input/TeX', 'output/SVG'],
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: ["Safe.js"],
+    });
+</script>
+<script type="text/javascript" nonce="vL0oWwbuMqgTFPlReeHqCw==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    // Always use the production asset in local dev, which is served from GCS. We tried to proxy and / or serve this
+    // in a better way in localhost, but it didn't work out. See b/328073416#comment8 for details.
+    const forceProdHost = window.location.hostname === "localhost";
+    lib.src = `${forceProdHost ? "https://www.kaggle.com" : ""}/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS_SVG`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+
+
+
+    <!-- Cheers, web-cc7db6fb5-98n8pp. -->
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+# -------------------------
+# Python & Jupyter defaults
+# -------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.ipynb_checkpoints/
+.env
+*.DS_Store
+
+# -------------------------
+# Data files
+# -------------------------
+# Ignore the full dataset (too large for GitHub)
+Data/diabetes_readmission.csv
+
+# Allow the sample dataset to be uploaded
+Data/diabetes_readmission_sample.csv
+
+# -------------------------
+# Visuals
+# -------------------------
+# Keep plots and charts
+Visuals/*.png
+Visuals/*.jpg
+
+# -------------------------
+# Environment / dependencies
+# -------------------------
+.venv/
+.env/
+*.log
+
