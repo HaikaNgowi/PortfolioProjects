@@ -1,4 +1,4 @@
-# Portfolio Analysis Dashboard
+# Financial Markets & Portfolio Analysis
 
 ## Overview
 Investors often ask:  
